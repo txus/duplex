@@ -8,6 +8,9 @@ Based on ![Krzystztof Klis' proxy library](https://github.com/kklis/proxy).
 
 # Install
 
+You'll need `netcat` to run the tests.
+
+    sudo apt-get install netcat
     git clone git://github.com/txus/duplex.git
     cd duplex
     make

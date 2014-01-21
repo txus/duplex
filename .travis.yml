@@ -1,5 +1,5 @@
 language: c
-script: make
+script: sudo apt-get install netcat && make
 compiler:
     - clang
     - gcc

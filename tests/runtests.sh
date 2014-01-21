@@ -2,13 +2,13 @@
 
 rm -f /tmp/.duplex_remote /tmp/.duplex_replay /tmp/.duplex_pid;
 
-nc -l 127.0.0.1 -p 20000 > /tmp/.duplex_remote &
-nc -l 127.0.0.1 -p 20001 > /tmp/.duplex_replay &
+netcat -l 127.0.0.1 20000 > /tmp/.duplex_remote &
+netcat -l 127.0.0.1 20001 > /tmp/.duplex_replay &
 bin/duplex -l 20005 -h 127.0.0.1 -p 20000 -H 127.0.0.1 -P 20001 > /tmp/.duplex_pid
 pid=$(cat /tmp/.duplex_pid)
 
 sleep 0.025
-echo "Hello world" | nc 127.0.0.1 20005
+echo "Hello world" | netcat 127.0.0.1 20005
 sleep 0.025
 
 remote=$(cat /tmp/.duplex_remote)
