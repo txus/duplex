@@ -36,9 +36,8 @@ everything to `127.0.0.1:10000` and at the same time replay it on
 This was made by Josep M. Bach (Txus) under the MIT license. I'm
 ![@txustice][twitter] on twitter (where you should probably follow me!).
 
-Special credits to ![Krzystztof Klis][kklis] for his ![proxy][proxy] library,
+Special credits to Krzystztof Klis for his ![proxy][proxy] library,
 upon which `duplex` is based.
 
 [twitter]: https://twitter.com/txustice
 [proxy]: https://github.com/kklis/proxy
-[kklis]: https://github.com/kklis
