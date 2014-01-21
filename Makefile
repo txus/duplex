@@ -57,6 +57,7 @@ clean:
 install: all
 				install -d $(DESTDIR)/$(PREFIX)/lib/
 				install $(TARGET) $(DESTDIR)/$(PREFIX)/lib/
+				install $(PROGRAMS) $(DESTDIR)/$(PREFIX)/bin/
 
 # The Checker
 BADFUNCS='[^_.>a-zA-Z0-9](str(n?cpy|n?cat|xfrm|n?dup|str|pbrk|tok|_)|stpn?cpy|a?sn?printf|byte_)'
