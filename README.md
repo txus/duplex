@@ -4,7 +4,7 @@ Duplex is a simple TCP proxy that, apart from forwarding the incoming traffic
 to a remote host, transparently replays it to a third host, normally for
 testing purposes.
 
-Based on ![Krzystztof Klis' proxy library](https://github.com/kklis/proxy).
+Based on [Krzystztof Klis' proxy library][proxy].
 
 # Install
 
@@ -37,9 +37,9 @@ everything to `127.0.0.1:10000` and at the same time replay it on
 # Who's this
 
 This was made by Josep M. Bach (Txus) under the MIT license. I'm
-![@txustice][twitter] on twitter (where you should probably follow me!).
+[@txustice][twitter] on twitter (where you should probably follow me!).
 
-Special credits to Krzystztof Klis for his ![proxy][proxy] library,
+Special credits to Krzystztof Klis for his [proxy][proxy] library,
 upon which `duplex` is based.
 
 [twitter]: https://twitter.com/txustice
